@@ -5,42 +5,35 @@ export default function Header() {
   return (
     <header>
       <Head>
-        <title>Pavittar Singh | Front End developer | Portfolio</title>
+        <title>Suraj Sanwal | Software developer | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="alternate" href="https://pavittarsingh.tk" hreflang="en-US"/> 
-        <meta
-          name="google-site-verification"
-          content="_oyhB4K8pykEa9gWWceeLIcAtcdHuBm8HmOC14mOUfI"
-        />
+        <link rel="alternate" href="https://surajsanwal.vercel.app" hreflang="en-US" />
+        <meta name="google-site-verification" content="VRWdGoAOWfzHPuWv86oI6DVOeoUr6eBFaMiOczlSikk" />
         <meta
           name="description"
-          content="Hello, my name is Pavittar Singh and I'm a front end developer in
-          India. My portfolio is a representation of all that I've learned
-          and accomplished as a FrontEnd Developer."
+          content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta
           name="og:title"
-          content="Pavittar Singh | Front end developer | Portfolio"
+          content="Suraj Sanwal | Software developer | Portfolio"
         />
         <meta
           name="og:description"
-          content="Hello, my name is Pavittar Singh and I'm a front end developer in
-          India. My portfolio is a representation of all that I've learned
-          and accomplished as a FrontEnd Developer."
+          content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta name="og:image" content="/logo.png" />
         <meta
           name="keywords"
-          content="Frontend developer, Portfolio, Developer, web developer, web design, web design solutions, react developer, angular developer, JS developer, Javascript developer, Designer, mern stack developer, mean stack developer, bootstrap, html, css"
+          content="Software Developer, Backend Developer, Frontend, Backend, Frontend developer, Portfolio, Developer, web developer, web design, web design solutions, react developer, angular developer, JS developer, Javascript developer, Designer, mern stack developer, mean stack developer, bootstrap, html, css, Suraj Sanwal"
         />
         <meta
           name="subject"
-          content="Pavittar Singh | Front end developer | Portfolio"
+          content="Suraj Sanwal | Software Developer | Portfolio"
         />
-        <meta name="copyright" content="Pavittar Singh" />
+        <meta name="copyright" content="Suraj Sanwal" />
         <meta name="language" content="ES" />
-        <meta name="hostname" content="portfolio-coral-one.now.sh/" />
-        <meta name="expected-hostname" content="portfolio-coral-one.now.sh/" />
+        <meta name="hostname" content="https://surajsanwal.vercel.app//" />
+        <meta name="expected-hostname" content="https://surajsanwal.vercel.app/" />
         <meta name="revisit-after" content="7 days" />
         <meta httpEquiv="Expires" content="0" />
         <meta httpEquiv="Pragma" content="no-cache" />
@@ -49,11 +42,11 @@ export default function Header() {
         {/* <!-- Google / Search Engine Tags --> */}
         <meta
           itemProp="name"
-          content="Pavittar Singh | Front end developer | Portfolio"
+          content="Suraj Sanwal | Software developer | Portfolio"
         />
         <meta
           itemProp="description"
-          content="Hello, my name is Pavittar Singh and I'm a front end developer in India. My portfolio is a representation of all that I've learned and accomplished as a FrontEnd Developer."
+          content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta itemProp="image" content="/logo.png" />
 
@@ -62,11 +55,11 @@ export default function Header() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Pavittar Singh | Front end developer | Portfolio"
+          content="Suraj Sanwal | Software developer | Portfolio"
         />
         <meta
           property="og:description"
-          content="Hello, my name is Pavittar Singh and I'm a front end developer in India. My portfolio is a representation of all that I've learned and accomplished as a FrontEnd Developer."
+          content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta property="og:image" content="/logo.png" />
 
@@ -74,17 +67,17 @@ export default function Header() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Pavittar Singh | Front end developer | Portfolio"
+          content="Suraj Sanwal | Software developer | Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Hello, my name is Pavittar Singh and I'm a front end developer in India. My portfolio is a representation of all that I've learned and accomplished as a FrontEnd Developer."
+          content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta name="twitter:image" content="/logo.png" />
 
         {/* Meta Tags Generated via http://heymeta.com  */}
       </Head>
-      <h1 className="brand open-sans-font"> Pavittar Singh </h1>
+      <h1 className="brand open-sans-font"> Suraj Sanwal </h1>
       <ul className="links">
         <li>
           <Link href="/">

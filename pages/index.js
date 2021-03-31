@@ -17,6 +17,12 @@ export default function Home() {
       link: "https://reactjs.org/",
     },
     {
+      src: "/react.png",
+      srcset: "/react.png",
+      title: "React Native",
+      link: "https://reactjs.org/",
+    },
+    {
       src: "/angular.png",
       srcset: "/angular.png",
       title: "Angular",
@@ -55,6 +61,7 @@ export default function Home() {
   ];
 
   const projects = [
+    
     {
       src: "/project-reachlive.png",
       title: "ReachLive",
@@ -100,16 +107,10 @@ export default function Home() {
         <section>
           <div className="intro">
             <div className="intro-image">
-              <img src="/profile.png" alt="pavittar singh | profile image" />
+              <img src="/profile.png" alt="Suraj Sanwal | profile image" />
             </div>
             <span className="intro-desc">
-              Hello, my name is Pavittar Singh and I'm a front end developer in
-              India. My portfolio is a representation of all that I've learned
-              and accomplished as a FrontEnd Developer. I am seeking a position
-              in which I can increase my knowledge, skill set and inter-personal
-              skills, while fully utilizing my experience and abilities working
-              with team members who support and teach each other to achieve
-              goals above and beyond expectations.
+              I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer. I am seeking a position in which I can increase my knowledge, skill set and inter-personal skills, while fully utilizing my experience and abilities working with team members who support and teach each other to achieve goals above and beyond expectations.
             </span>
           </div>
         </section>
@@ -139,12 +140,12 @@ export default function Home() {
             <div className="card-body">
               Download My{" "}
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1tJ4DbL27OL9HYRFVDJthiyNNUR6_0k1K/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Resume
+                Curriculum vitae
               </a>
             </div>
           </div>
@@ -155,7 +156,7 @@ export default function Home() {
           <ul className="connect-with-me">
             <li>
               <a
-                href="http://instagram.com/pavittar95"
+                href="https://www.instagram.com/swraporians/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -165,7 +166,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://twitter.com/pavi_1995"
+                href="https://twitter.com/im_sanwal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -175,7 +176,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="mailto:singh.pavittar95@gmail.com"
+                href="mailto:sonusanwal65@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -184,7 +185,7 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/pavittar95" target="_blank"
+              <a href="https://github.com/surajSanwal" target="_blank"
                 rel="noopener noreferrer">
                 <img src="/github.png" />
                 <span>Github</span>
