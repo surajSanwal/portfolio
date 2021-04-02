@@ -7,7 +7,7 @@ export default function Header() {
       <Head>
         <title>Suraj Sanwal | Software developer | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="alternate" href="https://surajsanwal.vercel.app" hreflang="en-US" />
+        <link rel="alternate" href="https://surajsanwal.vercel.app" hrefLang="en-US" />
         <meta name="google-site-verification" content="VRWdGoAOWfzHPuWv86oI6DVOeoUr6eBFaMiOczlSikk" />
         <meta
           name="description"
@@ -95,8 +95,8 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <Link href="/#contact-us">
-            <a className="prata-font">Contact Us</a>
+          <Link href="/#contact-me">
+            <a className="prata-font">Contact me</a>
           </Link>
         </li>
       </ul>

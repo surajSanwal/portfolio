@@ -198,7 +198,7 @@ export default function Home() {
           </div>
         </section>
         <br />
-        <section className="mb-50" id="contact-us">
+        <section className="mb-50" id="contact-me">
           <h4 className="section-title">Connect with Me</h4>
           <ul className="connect-with-me">
             <li>
