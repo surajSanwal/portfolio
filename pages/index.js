@@ -5,6 +5,12 @@ import { Fragment } from "react";
 export default function Home() {
   const services = [
     {
+      src: "/typescript.png",
+      srcset: "/typescript.png",
+      title: "TypeScript",
+      link: " https://www.typescriptlang.org/",
+    },
+    {
       src: "/javascript.png",
       srcset: "/javascript.png",
       title: "JavaScript",
@@ -52,12 +58,12 @@ export default function Home() {
       title: "NextJs",
       link: "https://nextjs.org/",
     },
-    {
-      src: "/frontity.svg",
-      srcset: "/frontity.svg",
-      title: "Frontity",
-      link: "https://frontity.org/",
-    },
+    // {
+    //   src: "/frontity.svg",
+    //   srcset: "/frontity.svg",
+    //   title: "Frontity",
+    //   link: "https://frontity.org/",
+    // },
   ];
 
   const projects = [
