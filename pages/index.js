@@ -20,7 +20,7 @@ export default function Home() {
       src: "/react.png",
       srcset: "/react.png",
       title: "React Native",
-      link: "https://reactjs.org/",
+      link: "https://reactnative.dev/",
     },
     {
       src: "/angular.png",
@@ -61,7 +61,81 @@ export default function Home() {
   ];
 
   const projects = [
-    
+    {
+      src: "/liviausa.png",
+      title: "Livia USA",
+      link: "https://liviausa.com/",
+    },
+    {
+      src: "/liviaConnect.png",
+      title: "Livia Connect",
+      link: "https://liviaconnect.com/",
+    },
+    {
+      src: "/liviaRx.png",
+      title: "Livia Rx",
+      link: "https://liviarx.com/",
+    },
+    {
+      src: "/adidas.png",
+      title: "Adidas iOS",
+      link: "https://apps.apple.com/us/app/adidas/id1266591536",
+    },
+    {
+      src: "/adidas.png",
+      title: "Adidas Android",
+      link: "https://play.google.com/store/apps/details?id=com.adidas.app",
+    },
+    {
+      src: "/cidr.png",
+      title: "Circular Drive(CIDR) iOS",
+      link: "https://apps.apple.com/us/app/circulardrive/id1438519496?ls=1",
+    },
+    {
+      src: "/cidr.png",
+      title: "Circular Drive(CIDR) Android",
+      link: "https://play.google.com/store/apps/details?id=com.cidr",
+    },
+    {
+      src: "/act.png",
+      title: "ACT Nurses Portal",
+      link: "http://acthomehealthservices.com/nurse-portal/",
+    },
+    {
+      src: "/ajivar.png",
+      title: "Ajivar (iOS)-The Resiliency App",
+      link: "https://apps.apple.com/us/app/u-ajivar-resiliency-app/id1469213798",
+    },
+    {
+      src: "/ajivar.png",
+      title: "Ajivar (Android)-The Resiliency App",
+      link: "https://play.google.com/store/apps/details?id=com.ajivar.utajivar&hl=en",
+    },
+    {
+      src: "/ohc.png",
+      title: "Overture Health Care (iOS)",
+      link: "https://apps.apple.com/in/app/overture-health-care/id1469870955",
+    },
+    {
+      src: "/ohc.png",
+      title: "Overture Health Care (Android)",
+      link: "https://play.google.com/store/apps/details?id=com.overture.health&hl=en",
+    },
+    {
+      src: "/qvik.png",
+      title: "Qvik Task",
+      link: "http://54.71.18.74:4601/",
+    },
+    {
+      src: "/procure.png",
+      title: "Procure Network Core",
+      link: "https://core.procurenetworks.com/",
+    },
+    {
+      src: "/procure.png",
+      title: "Procure Network Order",
+      link: "https://order.procurenetworks.com/",
+    },
     {
       src: "/project-reachlive.png",
       title: "ReachLive",
@@ -71,33 +145,6 @@ export default function Home() {
       src: "/project-reachlive.png",
       title: "ReachLive Admin",
       link: "http://admin.reachlive.com/",
-    },
-    {
-      src: "/project-vndr.png",
-      title: "Vndr",
-      link: "https://findavndr.com/",
-    },
-    {
-      src: "/project-asparia.png",
-      title: "Asparia Text Chat",
-      link: "https://textingchat-test.simplify.health/",
-    },
-    {
-      src: "/project-irusa.png",
-      title: "Irusa",
-      link: "http://irusa.app/",
-      cls: "circle-card-item",
-    },
-    {
-      src: "/project-pipetrak.png",
-      title: "Pipetrak IT App",
-      link:
-        "https://play.google.com/store/apps/details?id=com.petroit.material&hl=en_IN",
-    },
-    {
-      src: "/project-procure.png",
-      title: "Procure Network",
-      link: "https://core.procure.co/",
     },
   ];
 
@@ -140,7 +187,7 @@ export default function Home() {
             <div className="card-body">
               Download My{" "}
               <a
-                href="https://drive.google.com/file/d/1tJ4DbL27OL9HYRFVDJthiyNNUR6_0k1K/view?usp=sharing"
+                href="https://docs.google.com/document/d/1p1hxJlQ6pNpVkRtIBWvV-GwwDqGvWk4OYd_srl7jV_M/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

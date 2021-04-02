@@ -24,7 +24,7 @@ export default function Header() {
         <meta name="og:image" content="/logo.png" />
         <meta
           name="keywords"
-          content="Software Developer, Backend Developer, Frontend, Backend, Frontend developer, Portfolio, Developer, web developer, web design, web design solutions, react developer, angular developer, JS developer, Javascript developer, Designer, mern stack developer, mean stack developer, bootstrap, html, css, Suraj Sanwal"
+          content="Software Developer, Backend Developer, Frontend, Backend, Frontend developer, Portfolio, Developer, web developer, web design, web design solutions, react developer, angular developer, JS developer, Javascript developer, Designer, MERN stack developer, mean stack developer, bootstrap, html, css, Suraj Sanwal"
         />
         <meta
           name="subject"
