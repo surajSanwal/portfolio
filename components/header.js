@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
-
+import { useRouter } from 'next/router'
+import { pageViewTracking } from "../firebase/logger";
 export default function Header() {
+  const router = useRouter();
+  pageViewTracking(router.pathname);
   return (
     <header>
       <Head>
@@ -51,7 +54,7 @@ export default function Header() {
         <meta itemProp="image" content="/logo.png" />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://portfolio-coral-one.now.sh" />
+        <meta property="og:url" content="https://surajsanwal.vercel.app" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"

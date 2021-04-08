@@ -244,6 +244,13 @@ export default function Home() {
                 <span>Github</span>
               </a>
             </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ssanwal" target="_blank"
+                rel="noopener noreferrer">
+                <img src="/linkedIn.png" />
+                <span>LinkedIn</span>
+              </a>
+            </li>
           </ul>
         </section>
       </main>

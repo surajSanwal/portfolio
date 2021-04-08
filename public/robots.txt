@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://pavittarsingh.tk/sitemap.xml
+Sitemap: https://surajsanwal.vercel.app/sitemap.xml
