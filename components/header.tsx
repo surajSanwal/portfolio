@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from 'next/router'
-import { pageViewTracking } from "../firebase/logger";
-export default function Header() {
-  const router = useRouter();
-  pageViewTracking(router.pathname);
+import React from "react";
+
+interface HeaderProps {
+
+}
+
+const Header: React.FC<HeaderProps> = () => {
   return (
     <header>
       <Head>
@@ -106,3 +108,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

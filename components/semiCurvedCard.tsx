@@ -1,11 +1,17 @@
 import React from "react";
 
-export default function SemiCurvedCard({
-  src = "",
-  srcset = "",
+interface SemiCurvedCardProps {
+  src?: string,
+  srcset?: string,
+  title?: string,
+  description?: string,
+}
+
+
+const SemiCurvedCard: React.FC<SemiCurvedCardProps> = ({
   title = "",
   description = "",
-}) {
+}) => {
   return (
     <div className="semi-curved">
       <div className="image">
@@ -17,3 +23,5 @@ export default function SemiCurvedCard({
     </div>
   );
 }
+
+export default SemiCurvedCard;

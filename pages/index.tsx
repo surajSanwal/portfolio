@@ -1,8 +1,12 @@
-import Layout from "../components/layout";
-import CircleCard from "../components/circleCard";
 import { Fragment } from "react";
+import CircleCard from "../components/circleCard";
+import Layout from "../components/layout";
 
-export default function Home() {
+interface HomeProps {
+
+}
+
+const Home: React.FC<HomeProps> = () => {
   const services = [
     {
       src: "/typescript.png",
@@ -251,6 +255,13 @@ export default function Home() {
                 <span>LinkedIn</span>
               </a>
             </li>
+            <li>
+              <a href="skype:live:sonusanwal65" target="_blank"
+                rel="noopener noreferrer">
+                <img src="/skype.png" />
+                <span>Skype</span>
+              </a>
+            </li>
           </ul>
         </section>
       </main>
@@ -264,3 +275,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+export default Home;

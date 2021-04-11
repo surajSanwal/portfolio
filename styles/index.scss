@@ -72,6 +72,7 @@ footer {
 }
 
 footer img {
+  width: 42px;
   margin-left: 0.5rem;
 }
 
@@ -256,6 +257,12 @@ section {
       letter-spacing: 0.5px;
       word-spacing: 0.5px;
       font-family: "Prata", serif;
+    }
+
+    btn{
+      img{
+        width: 50px;
+      }
     }
   }
 }
