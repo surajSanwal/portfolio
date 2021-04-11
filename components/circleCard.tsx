@@ -1,6 +1,5 @@
 import React, { useCallback, useContext } from "react";
 import { FirebaseContext } from "../firebase/FirebaseProvider";
-// import { urlViewTracking } from "../firebase/logger";
 
 interface CircleCardProps {
   src?: string,
@@ -22,7 +21,7 @@ const CircleCard: React.FC<CircleCardProps> = ({
   const { tracking } = useContext(FirebaseContext);
   const onClick = useCallback(
     () => {
-      tracking.logEvent('page_view', {
+      tracking && tracking.logEvent('url_visit', {
         url_location: src,
         url_title: title,
       });
