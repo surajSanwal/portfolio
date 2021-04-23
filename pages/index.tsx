@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import CircleCard from "../components/circleCard";
 import Layout from "../components/layout";
 import ProjectCard from "../components/ProjectCard";
-import { projects, services } from "./data";
+import { projects, services } from "../data";
 
 interface HomeProps {
 
