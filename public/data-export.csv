@@ -1,0 +1,8 @@
+# ----------------------------------------
+# Events
+# ----------------------------------------
+Event Name,Count,Users,Mark as conversion
+first_visit,1,1,false
+page_view,23,1,false
+session_start,2,1,false
+url_view,1,1,false
