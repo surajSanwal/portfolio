@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import CircleCard from "../components/circleCard";
 import Layout from "../components/layout";
+import ProjectCard from "../components/ProjectCard";
 import { projects, services } from "./data";
 
 interface HomeProps {
@@ -36,11 +37,9 @@ const Home: React.FC<HomeProps> = () => {
         </section>
         <section id="projects" className="mb-50">
           <h4 className="section-title">Projects</h4>
-          <div className="card-list mt-3">
+          <div className="project-list mt-3">
             {projects.map((x, i) => (
-              <Fragment key={i}>
-                <CircleCard {...x} parentCls="pt-30" />
-              </Fragment>
+              <ProjectCard {...x} parentCls="pt-30" key={i} />
             ))}
           </div>
         </section>
@@ -112,6 +111,13 @@ const Home: React.FC<HomeProps> = () => {
                 rel="noopener noreferrer">
                 <img src="/skype.png" />
                 <span>Skype</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/919760843156?text=Hi%20Suraj,%20I%20want%20to%20connect%20with%20you%20on%20WhatsApp!" target="_blank"
+                rel="noopener noreferrer">
+                <img src="/whatsapp.png" />
+                <span>WhatsApp</span>
               </a>
             </li>
           </ul>
