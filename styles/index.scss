@@ -45,7 +45,7 @@ img.image {
 main {
   padding: 5rem 0;
   flex: 1;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -239,10 +239,11 @@ section {
   padding: 10px 20px;
   max-width: 300px;
 
-  a {
+  button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 
     .title {
       font-size: 18px;
@@ -336,4 +337,56 @@ ul.connect-with-me {
 
 .mb-20 {
   margin-bottom: 20px;
+}
+.project-list{
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+.project-card{
+  display: flex;
+  padding: 20px 10px;
+  margin: 5px;
+  border-radius: 25px;
+  box-shadow: -5px -5px 8px 0 rgb(255 255 255 / 90%), 5px 5px 8px 0 rgb(0 0 0 / 10%);
+  border: 1px dotted #ecfaf4;
+  
+  img{
+    width: 150px;
+    height: auto;
+  }
+  .project-details-cover{
+    padding: 0px 20px;
+    .description{
+      text-align: justify;
+      font-size: 14px;
+      color: #979797;
+      letter-spacing: 0.5px;
+      word-spacing: 0.5px;
+      font-family: "Prata", serif;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .link-cover{
+      p{
+        font-size: 13px;
+        font-weight: bold;
+      }
+      span{
+        font-size: 12px;
+        font-weight: bold;
+      }
+      button{
+        font-size: 12px;
+        cursor: pointer;
+        color: #007bff;
+      }
+    }
+  }
 }
