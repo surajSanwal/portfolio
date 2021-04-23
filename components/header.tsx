@@ -90,6 +90,11 @@ const Header: React.FC<HeaderProps> = () => {
           </Link>
         </li>
         <li>
+          <Link href="/#experience">
+            <a className="prata-font">Experience</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/#services">
             <a className="prata-font">Services</a>
           </Link>

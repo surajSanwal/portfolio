@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import CircleCard from "../components/circleCard";
+import ExperienceCard from "../components/ExperianceCard";
 import Layout from "../components/layout";
 import ProjectCard from "../components/ProjectCard";
-import { projects, services } from "../data";
+import { Experiences, projects, services } from "../data";
 
 interface HomeProps {
 
@@ -22,6 +23,15 @@ const Home: React.FC<HomeProps> = () => {
             <span className="intro-desc">
               I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer. I am seeking a position in which I can increase my knowledge, skill set and inter-personal skills, while fully utilizing my experience and abilities working with team members who support and teach each other to achieve goals above and beyond expectations.
             </span>
+          </div>
+        </section>
+        <section id="experience" className="mb-50">
+          <span className="section-question">From where I got Experience?</span>
+          <h4 className="section-title">Experiences</h4>
+          <div className="card-list">
+            {Experiences.map((x, i) =>
+              <ExperienceCard {...x} key={i} parentCls="pt-30" />
+            )}
           </div>
         </section>
         <section id="services" className="mb-50">

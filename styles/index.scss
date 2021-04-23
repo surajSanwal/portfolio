@@ -390,3 +390,45 @@ ul.connect-with-me {
     }
   }
 }
+.experience-card{
+  display: flex;
+  padding: 20px 10px;
+  margin: 5px;
+  border-radius: 25px;
+  box-shadow: -5px -5px 8px 0 rgb(255 255 255 / 90%), 5px 5px 8px 0 rgb(0 0 0 / 10%);
+  border: 1px dotted #ecfaf4;
+  
+  img{
+    width: 150px;
+    height: auto;
+  }
+  .experience-details-cover{
+    padding: 0px 20px;
+    .description{
+      text-align: justify;
+      font-size: 14px;
+      color: #979797;
+      letter-spacing: 0.5px;
+      word-spacing: 0.5px;
+      font-family: "Prata", serif;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+    }
+    .company{
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "Prata", serif;
+    }
+    .date{
+      font-size: 13px;
+      color: #979797;
+      letter-spacing: 0.5px;
+      word-spacing: 0.5px;
+      font-family: "Prata", serif;
+    }
+  }
+}
