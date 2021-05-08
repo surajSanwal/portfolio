@@ -1,20 +1,33 @@
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
-
+import { useRouter } from "next/router";
+import React, { useCallback, useState } from "react";
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
+  const [toggle, setToggle] = useState<string>("");
+  const { asPath } = useRouter();
+  const handleToggle = useCallback(() => {
+    setToggle(toggle.length ? "" : "show");
+  }, [toggle]);
+
+  const hideMenu = useCallback(() => {
+    setToggle("");
+  }, [toggle]);
+
   return (
     <header>
       <Head>
-        <title>Suraj Sanwal | Software developer | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Suraj Sanwal | Software Developer | Portfolio</title>
+        <link rel="icon" href="/favicon.ico" hrefLang="en-US" />
+        <link rel="apple-touch-icon" href="/favicon.ico"></link>
         <link
           rel="alternate"
           href="https://surajsanwal.vercel.app"
           hrefLang="en-US"
         />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="google-site-verification"
           content="VRWdGoAOWfzHPuWv86oI6DVOeoUr6eBFaMiOczlSikk"
@@ -25,7 +38,7 @@ const Header: React.FC<HeaderProps> = () => {
         />
         <meta
           name="og:title"
-          content="Suraj Sanwal | Software developer | Portfolio"
+          content="Suraj Sanwal | Software Developer | Portfolio"
         />
         <meta
           name="og:description"
@@ -34,14 +47,14 @@ const Header: React.FC<HeaderProps> = () => {
         <meta name="og:image" content="/logo.png" />
         <meta
           name="keywords"
-          content="Software Developer, Backend Developer, Frontend, Backend, Frontend developer, Portfolio, Developer, web developer, web design, web design solutions, react developer, angular developer, JS developer, Javascript developer, Designer, MERN stack developer, mean stack developer, bootstrap, html, css, Suraj Sanwal"
+          content="Software Developer, Backend Developer, Frontend, Backend, Frontend developer, Portfolio, Developer, web developer, web design, web design solutions, react developer, angular developer, JS developer, Javascript developer, Designer, MERN stack developer, mean stack developer, bootstrap, html, css, Suraj Sanwal, Suraj, Amrapali, Amrapali Group of institutes"
         />
         <meta
           name="subject"
           content="Suraj Sanwal | Software Developer | Portfolio"
         />
         <meta name="copyright" content="Suraj Sanwal" />
-        <meta name="language" content="ES" />
+        <meta name="language" content="EN" />
         <meta name="hostname" content="https://surajsanwal.vercel.app//" />
         <meta
           name="expected-hostname"
@@ -55,7 +68,7 @@ const Header: React.FC<HeaderProps> = () => {
         {/* <!-- Google / Search Engine Tags --> */}
         <meta
           itemProp="name"
-          content="Suraj Sanwal | Software developer | Portfolio"
+          content="Suraj Sanwal | Software Developer | Portfolio"
         />
         <meta
           itemProp="description"
@@ -68,7 +81,7 @@ const Header: React.FC<HeaderProps> = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Suraj Sanwal | Software developer | Portfolio"
+          content="Suraj Sanwal | Software Developer | Portfolio"
         />
         <meta
           property="og:description"
@@ -80,15 +93,20 @@ const Header: React.FC<HeaderProps> = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Suraj Sanwal | Software developer | Portfolio"
+          content="Suraj Sanwal | Software Developer | Portfolio"
         />
         <meta
           name="twitter:description"
           content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta name="twitter:image" content="/logo.png" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+          crossOrigin="anonymous"
+        />
 
-        {/* Meta Tags Generated via http://heymeta.com  */}
         <script
           src="https://platform.linkedin.com/badges/js/profile.js"
           async
@@ -96,34 +114,82 @@ const Header: React.FC<HeaderProps> = () => {
           type="text/javascript"
         ></script>
       </Head>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossOrigin="anonymous"
+      ></script>
       <h1 className="brand open-sans-font"> Suraj Sanwal </h1>
-      <ul className="links">
-        <li>
-          <Link href="/">
-            <a className="prata-font">Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#experience">
-            <a className="prata-font">Experience</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#services">
-            <a className="prata-font">Services</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#projects">
-            <a className="prata-font">Projects</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#contact-me">
-            <a className="prata-font">Contact me</a>
-          </Link>
-        </li>
-      </ul>
+      <div className="pos-f-t">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={handleToggle}
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className={`collapse navbar-collapse ${toggle}`}>
+            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li className={`nav-item ${asPath === "/" ? "active" : ""}`}>
+                <Link href="/" locale="en-US">
+                  <a
+                    href="/"
+                    className="nav-link prata-font"
+                    onClick={hideMenu}
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li
+                className={`nav-item ${
+                  asPath === "/#experience" ? "active" : ""
+                }`}
+              >
+                <Link href="/#experience" locale="en-US">
+                  <a className="nav-link prata-font" onClick={hideMenu}>
+                    Experience
+                  </a>
+                </Link>
+              </li>
+              <li
+                className={`nav-item ${
+                  asPath === "/#services" ? "active" : ""
+                }`}
+              >
+                <Link href="/#services" locale="en-US">
+                  <a className="nav-link prata-font" onClick={hideMenu}>
+                    Services
+                  </a>
+                </Link>
+              </li>
+              <li
+                className={`nav-item ${
+                  asPath === "/#projects" ? "active" : ""
+                }`}
+              >
+                <Link href="/#projects" locale="en-US">
+                  <a className="nav-link prata-font" onClick={hideMenu}>
+                    Projects
+                  </a>
+                </Link>
+              </li>
+              <li
+                className={`nav-item ${
+                  asPath === "/#contact-me" ? "active" : ""
+                }`}
+              >
+                <Link href="/#contact-me" locale="en-US">
+                  <a className="nav-link prata-font" onClick={hideMenu}>
+                    Contact me
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };

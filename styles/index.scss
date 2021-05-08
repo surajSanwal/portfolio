@@ -1,9 +1,15 @@
 html,
 body {
+  min-width: 300px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  header {
+    justify-content: space-between;
+  }
+
 }
 
 * {
@@ -149,18 +155,30 @@ header {
   position: fixed;
   background-color: white;
 
-  ul {
-    padding: 0;
-    list-style-type: none;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: flex-end;
 
-    li {
-      padding-left: 5px;
-      padding-right: 5px;
+  nav {
+    div {
+      ul {
+        padding: 0;
+        list-style-type: none;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
+
+        li {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        .active {
+          border-bottom: #007bff solid 5px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          color: #000;
+        }
+      }
     }
 
     @media screen and (max-width: 600px) {
@@ -170,8 +188,6 @@ header {
 }
 
 main {
-
-  // intro
   .intro {
     padding: 20px 60px;
     margin-top: 60px;
@@ -191,6 +207,7 @@ main {
       padding: 20px;
       font-family: "Open Sans", sans-serif;
       color: #979797;
+      text-align: justify;
     }
 
     @media screen and (max-width: 600px) {
@@ -260,8 +277,8 @@ section {
       font-family: "Prata", serif;
     }
 
-    btn{
-      img{
+    btn {
+      img {
         width: 50px;
       }
     }
@@ -338,27 +355,31 @@ ul.connect-with-me {
 .mb-20 {
   margin-bottom: 20px;
 }
-.project-list{
+
+.project-list {
   margin-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px;
 }
-.project-card{
+
+.project-card {
   display: flex;
   padding: 20px 10px;
   margin: 5px;
   border-radius: 25px;
   box-shadow: -5px -5px 8px 0 rgb(255 255 255 / 90%), 5px 5px 8px 0 rgb(0 0 0 / 10%);
   border: 1px dotted #ecfaf4;
-  
-  img{
+
+  img {
     width: 150px;
     height: auto;
   }
-  .project-details-cover{
+
+  .project-details-cover {
     padding: 0px 20px;
-    .description{
+
+    .description {
       text-align: justify;
       font-size: 14px;
       color: #979797;
@@ -366,6 +387,7 @@ ul.connect-with-me {
       word-spacing: 0.5px;
       font-family: "Prata", serif;
     }
+
     .title {
       font-size: 18px;
       font-weight: 600;
@@ -373,16 +395,18 @@ ul.connect-with-me {
       font-family: "Open Sans", sans-serif;
     }
 
-    .link-cover{
-      p{
+    .link-cover {
+      p {
         font-size: 13px;
         font-weight: bold;
       }
-      span{
+
+      span {
         font-size: 12px;
         font-weight: bold;
       }
-      button{
+
+      button {
         font-size: 12px;
         cursor: pointer;
         color: #007bff;
@@ -390,21 +414,24 @@ ul.connect-with-me {
     }
   }
 }
-.experience-card{
+
+.experience-card {
   display: flex;
   padding: 20px 10px;
   margin: 5px;
   border-radius: 25px;
   box-shadow: -5px -5px 8px 0 rgb(255 255 255 / 90%), 5px 5px 8px 0 rgb(0 0 0 / 10%);
   border: 1px dotted #ecfaf4;
-  
-  img{
+
+  img {
     width: 150px;
     height: auto;
   }
-  .experience-details-cover{
+
+  .experience-details-cover {
     padding: 0px 20px;
-    .description{
+
+    .description {
       text-align: justify;
       font-size: 14px;
       color: #979797;
@@ -412,18 +439,21 @@ ul.connect-with-me {
       word-spacing: 0.5px;
       font-family: "Prata", serif;
     }
+
     .title {
       font-size: 18px;
       font-weight: 600;
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
     }
-    .company{
+
+    .company {
       font-size: 16px;
       font-weight: bold;
       font-family: "Prata", serif;
     }
-    .date{
+
+    .date {
       font-size: 13px;
       color: #979797;
       letter-spacing: 0.5px;
