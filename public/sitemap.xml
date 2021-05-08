@@ -1,19 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-<loc>https://surajsanwal.vercel.app</loc>
-<lastmod>2020-08-14T18:33:34+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://surajsanwal.vercel.app/</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2021-05-02</lastmod>
 </url>
 <url>
-<loc>https://docs.google.com/document/d/1p1hxJlQ6pNpVkRtIBWvV-GwwDqGvWk4OYd_srl7jV_M/edit</loc>
-<priority>0.80</priority>
+  <loc>https://surajsanwal.vercel.app/#experience</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2021-05-02</lastmod>
 </url>
-
-
+<url>
+  <loc>https://surajsanwal.vercel.app/#services</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2021-05-02</lastmod>
+</url>
+<url>
+  <loc>https://surajsanwal.vercel.app/#projects</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2021-05-02</lastmod>
+</url>
+<url>
+  <loc>https://surajsanwal.vercel.app/#contact-me</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2021-05-02</lastmod>
+</url>
+<url>
+  <loc>skype:live:sonusanwal65</loc>
+  <priority>1.0</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2021-05-02</lastmod>
+</url>
 </urlset>

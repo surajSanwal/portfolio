@@ -2,9 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
-interface HeaderProps {
-
-}
+interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
   return (
@@ -12,8 +10,15 @@ const Header: React.FC<HeaderProps> = () => {
       <Head>
         <title>Suraj Sanwal | Software developer | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="alternate" href="https://surajsanwal.vercel.app" hrefLang="en-US" />
-        <meta name="google-site-verification" content="VRWdGoAOWfzHPuWv86oI6DVOeoUr6eBFaMiOczlSikk" />
+        <link
+          rel="alternate"
+          href="https://surajsanwal.vercel.app"
+          hrefLang="en-US"
+        />
+        <meta
+          name="google-site-verification"
+          content="VRWdGoAOWfzHPuWv86oI6DVOeoUr6eBFaMiOczlSikk"
+        />
         <meta
           name="description"
           content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
@@ -38,7 +43,10 @@ const Header: React.FC<HeaderProps> = () => {
         <meta name="copyright" content="Suraj Sanwal" />
         <meta name="language" content="ES" />
         <meta name="hostname" content="https://surajsanwal.vercel.app//" />
-        <meta name="expected-hostname" content="https://surajsanwal.vercel.app/" />
+        <meta
+          name="expected-hostname"
+          content="https://surajsanwal.vercel.app/"
+        />
         <meta name="revisit-after" content="7 days" />
         <meta httpEquiv="Expires" content="0" />
         <meta httpEquiv="Pragma" content="no-cache" />
@@ -81,6 +89,12 @@ const Header: React.FC<HeaderProps> = () => {
         <meta name="twitter:image" content="/logo.png" />
 
         {/* Meta Tags Generated via http://heymeta.com  */}
+        <script
+          src="https://platform.linkedin.com/badges/js/profile.js"
+          async
+          defer
+          type="text/javascript"
+        ></script>
       </Head>
       <h1 className="brand open-sans-font"> Suraj Sanwal </h1>
       <ul className="links">
@@ -112,6 +126,6 @@ const Header: React.FC<HeaderProps> = () => {
       </ul>
     </header>
   );
-}
+};
 
 export default Header;

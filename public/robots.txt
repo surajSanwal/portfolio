@@ -1,2 +1,3 @@
 User-agent: *
+Disallow:
 Sitemap: https://surajsanwal.vercel.app/sitemap.xml

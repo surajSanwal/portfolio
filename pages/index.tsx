@@ -5,13 +5,9 @@ import Layout from "../components/layout";
 import ProjectCard from "../components/ProjectCard";
 import { Experiences, projects, services } from "../data";
 
-interface HomeProps {
-
-}
+interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
-
-
   return (
     <Layout>
       <main>
@@ -21,7 +17,13 @@ const Home: React.FC<HomeProps> = () => {
               <img src="/profile.png" alt="Suraj Sanwal | profile image" />
             </div>
             <span className="intro-desc">
-              I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer. I am seeking a position in which I can increase my knowledge, skill set and inter-personal skills, while fully utilizing my experience and abilities working with team members who support and teach each other to achieve goals above and beyond expectations.
+              I'm a software developer having experience in frontend and backend
+              technologies. My portfolio is a representation of all that I've
+              learned and accomplished as a developer. I am seeking a position
+              in which I can increase my knowledge, skill set and inter-personal
+              skills, while fully utilizing my experience and abilities working
+              with team members who support and teach each other to achieve
+              goals above and beyond expectations.
             </span>
           </div>
         </section>
@@ -29,9 +31,9 @@ const Home: React.FC<HomeProps> = () => {
           <span className="section-question">From where I got Experience?</span>
           <h4 className="section-title">Experiences</h4>
           <div className="card-list">
-            {Experiences.map((x, i) =>
+            {Experiences.map((x, i) => (
               <ExperienceCard {...x} key={i} parentCls="pt-30" />
-            )}
+            ))}
           </div>
         </section>
         <section id="services" className="mb-50">
@@ -78,7 +80,7 @@ const Home: React.FC<HomeProps> = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/instagram.png" />
+                <img src="/instagram.png" alt="Instagram" />
                 <span>Instagram</span>
               </a>
             </li>
@@ -88,7 +90,7 @@ const Home: React.FC<HomeProps> = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/twitter.png" />
+                <img src="/twitter.png" alt="Twitter" />
                 <span>Twitter</span>
               </a>
             </li>
@@ -98,35 +100,47 @@ const Home: React.FC<HomeProps> = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/mail.png" />
+                <img src="/mail.png" alt="gmail" />
                 <span>Email</span>
               </a>
             </li>
             <li>
-              <a href="https://github.com/surajSanwal" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/github.png" />
+              <a
+                href="https://github.com/surajSanwal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/github.png" alt="github" />
                 <span>Github</span>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/ssanwal" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/linkedIn.png" />
+              <a
+                href="https://www.linkedin.com/in/ssanwal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/linkedIn.png" alt="linkedIn" />
                 <span>LinkedIn</span>
               </a>
             </li>
             <li>
-              <a href="skype:live:sonusanwal65" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/skype.png" />
+              <a
+                href="skype:live:sonusanwal65"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/skype.png" alt="skype" />
                 <span>Skype</span>
               </a>
             </li>
             <li>
-              <a href="https://wa.me/919760843156?text=Hi%20Suraj,%20I%20want%20to%20connect%20with%20you%20on%20WhatsApp!" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/whatsapp.png" />
+              <a
+                href="https://wa.me/919760843156?text=Hi%20Suraj,%20I%20want%20to%20connect%20with%20you%20on%20WhatsApp!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/whatsapp.png" alt="WhatsApp" />
                 <span>WhatsApp</span>
               </a>
             </li>
@@ -142,6 +156,6 @@ const Home: React.FC<HomeProps> = () => {
       </footer>
     </Layout>
   );
-}
+};
 
 export default Home;
