@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <header>
       <Head>
-        <title>Suraj Sanwal | Software Developer | Portfolio</title>
+        <title lang="en">Suraj Sanwal | Software Developer | Portfolio</title>
         <link rel="icon" href="/favicon.ico" hrefLang="en-US" />
         <link rel="apple-touch-icon" href="/favicon.ico"></link>
         <link
