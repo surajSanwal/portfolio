@@ -100,6 +100,8 @@ const Header: React.FC<HeaderProps> = () => {
           content="I'm a software developer having experience in frontend and backend technologies. My portfolio is a representation of all that I've learned and accomplished as a  developer."
         />
         <meta name="twitter:image" content="/logo.png" />
+        {/* monetization */}
+        <meta name="monetization" content="$ilp.uphold.com/admHxDij9kPN"></meta>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
           rel="stylesheet"
