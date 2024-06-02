@@ -5,8 +5,8 @@ import React from "react";
 interface ExperienceCardProps {
   title: string;
   company: string;
-  from: Date | string;
-  to: Date | string;
+  from: string;
+  to: string;
   description: string;
   location: string;
   logo: string;
