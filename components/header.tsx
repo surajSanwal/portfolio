@@ -1,3 +1,4 @@
+"use-client"
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -134,58 +135,44 @@ const Header: React.FC<HeaderProps> = () => {
           <div className={`collapse navbar-collapse ${toggle}`}>
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className={`nav-item ${asPath === "/" ? "active" : ""}`}>
-                <Link href="/" locale="en-US">
-                  <a
-                    href="/"
-                    className="nav-link prata-font"
-                    onClick={hideMenu}
-                  >
-                    Home
-                  </a>
+                <Link
+                  href="/"
+                  className="nav-link prata-font" locale="en-US"
+                  onClick={hideMenu}
+                >
+                  Home
                 </Link>
               </li>
               <li
-                className={`nav-item ${
-                  asPath === "/#experience" ? "active" : ""
-                }`}
+                className={`nav-item ${asPath === "/#experience" ? "active" : ""
+                  }`}
               >
-                <Link href="/#experience" locale="en-US">
-                  <a className="nav-link prata-font" onClick={hideMenu}>
-                    Experience
-                  </a>
+                <Link href={"/#experience"} className="nav-link prata-font" locale="en-US" onClick={hideMenu}>
+                  Experience
                 </Link>
               </li>
               <li
-                className={`nav-item ${
-                  asPath === "/#services" ? "active" : ""
-                }`}
+                className={`nav-item ${asPath === "/#services" ? "active" : ""
+                  }`}
               >
-                <Link href="/#services" locale="en-US">
-                  <a className="nav-link prata-font" onClick={hideMenu}>
-                    Services
-                  </a>
+                <Link href={"/#services"} locale="en-US" className="nav-link prata-font" onClick={hideMenu}>
+                  Services
                 </Link>
               </li>
               <li
-                className={`nav-item ${
-                  asPath === "/#projects" ? "active" : ""
-                }`}
+                className={`nav-item ${asPath === "/#projects" ? "active" : ""
+                  }`}
               >
-                <Link href="/#projects" locale="en-US">
-                  <a className="nav-link prata-font" onClick={hideMenu}>
-                    Projects
-                  </a>
+                <Link href={"/#projects"} locale="en-US" className="nav-link prata-font" onClick={hideMenu}>
+                  Projects
                 </Link>
               </li>
               <li
-                className={`nav-item ${
-                  asPath === "/#contact-me" ? "active" : ""
-                }`}
+                className={`nav-item ${asPath === "/#contact-me" ? "active" : ""
+                  }`}
               >
-                <Link href="/#contact-me" locale="en-US">
-                  <a className="nav-link prata-font" onClick={hideMenu}>
-                    Contact me
-                  </a>
+                <Link href="/#contact-me" locale="en-US" className="nav-link prata-font" onClick={hideMenu}>
+                  Contact me
                 </Link>
               </li>
             </ul>

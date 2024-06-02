@@ -1,3 +1,5 @@
+"use-client"
+import Link from "next/link";
 import React from "react";
 
 interface ExperienceCardProps {
@@ -29,11 +31,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <div className="experience-details-cover">
         <div>
           <p className="title">{title}</p>
-          <a href={url} target="_blank">
+          <Link href={url} target="_blank">
             <p className="company">
               {company}, {location}
             </p>
-          </a>
+          </Link>
           <p className="date">
             {from}-{to}
           </p>

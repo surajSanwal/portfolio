@@ -1,26 +1,25 @@
-import firebase from "firebase";
-import "firebase/analytics";
+import { Analytics, getAnalytics, logEvent } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
 import { useRouter } from 'next/router';
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import { firebaseConfig } from ".";
 
-if (typeof window !== 'undefined' && firebase.apps.length === 0) {
-  firebase.initializeApp(firebaseConfig);
-}
+
+const firebaseApp = initializeApp(firebaseConfig);
 
 export const FirebaseContext = createContext<any>(null);
 
 export const FirebaseTrackingProvider = (props: { children: ReactNode }) => {
   const router = useRouter();
-  const [tracking, setTracking] = useState<firebase.analytics.Analytics | undefined>(undefined);
+  const [tracking, setTracking] = useState<Analytics | undefined>(undefined);
 
   useEffect(() => {
-    setTracking(firebase.analytics());
+    setTracking(getAnalytics(firebaseApp));
     const handleRouteChange = (url: string) => {
       if (!tracking) {
         return;
       }
-      tracking.logEvent('page_view', {
+      logEvent(tracking, 'page_view', {
         page_location: url,
         page_title: document?.title,
       });

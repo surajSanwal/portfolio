@@ -1,3 +1,4 @@
+"use-client"
 import React, { useCallback, useContext } from "react";
 import { FirebaseContext } from "../firebase/FirebaseProvider";
 

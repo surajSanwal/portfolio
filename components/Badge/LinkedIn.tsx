@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const LinkedIn = () => {
   return (
@@ -12,12 +12,12 @@ const LinkedIn = () => {
         data-vanity="ssanwal"
         data-version="v1"
       >
-        <a
+        <Link
           className="badge-base__link LI-simple-link"
           href="https://in.linkedin.com/in/ssanwal?trk=profile-badge"
         >
           Suraj Sanwal
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { Fragment } from "react";
-import CircleCard from "../components/circleCard";
 import ExperienceCard from "../components/ExperianceCard";
-import Layout from "../components/layout";
 import ProjectCard from "../components/ProjectCard";
+import CircleCard from "../components/circleCard";
+import Layout from "../components/layout";
 import { Experiences, projects, services } from "../data";
 
 interface HomeProps {}
@@ -59,14 +60,14 @@ const Home: React.FC<HomeProps> = () => {
           <div className="card">
             <div className="card-body">
               Download My{" "}
-              <a
+              <Link
                 href="https://docs.google.com/document/d/1p1hxJlQ6pNpVkRtIBWvV-GwwDqGvWk4OYd_srl7jV_M/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
                 Curriculum vitae
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -75,74 +76,74 @@ const Home: React.FC<HomeProps> = () => {
           <h4 className="section-title">Connect with Me</h4>
           <ul className="connect-with-me">
             <li>
-              <a
+              <Link
                 href="https://www.instagram.com/swraporians/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/instagram.png" alt="Instagram" />
                 <span>Instagram</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://twitter.com/im_sanwal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/twitter.png" alt="Twitter" />
                 <span>Twitter</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="mailto:sonusanwal65@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/mail.png" alt="gmail" />
                 <span>Email</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://github.com/surajSanwal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/github.png" alt="github" />
                 <span>Github</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://www.linkedin.com/in/ssanwal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/linkedIn.png" alt="linkedIn" />
                 <span>LinkedIn</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="skype:live:sonusanwal65"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/skype.png" alt="skype" />
                 <span>Skype</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://wa.me/919760843156?text=Hi%20Suraj,%20I%20want%20to%20connect%20with%20you%20on%20WhatsApp!"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/whatsapp.png" alt="WhatsApp" />
                 <span>WhatsApp</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
