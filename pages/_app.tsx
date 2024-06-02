@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { FirebaseTrackingProvider } from "../firebase/FirebaseProvider";
 import "../styles/index.scss";
@@ -12,6 +13,7 @@ const MyApp: React.FC<MyAppProps> = ({ Component, pageProps }) => {
   return <FirebaseTrackingProvider>
     <Component {...pageProps} />
     <SpeedInsights />
+    <Analytics />
   </FirebaseTrackingProvider>;
 }
 export default MyApp;

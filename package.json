@@ -9,6 +9,7 @@
     "deploy": "npx vercel --prod"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.11",
     "bootstrap": "^4.5.0",
     "eslint-config-next": "^14.2.3",
