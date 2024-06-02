@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Senior Software Developer",
+    "company": "Appinventiv Technologies",
+    "from": "Aug 2020",
+    "to": "Till Now",
+    "url": "https://appinventiv.com/",
+    "description": "Working with Appinventive technology in different projects like Adidas, Livia Apps, Marketplace with Sharetribe, BuddyBet a betting application.",
+    "location": "Noida (Uttarparadesh)",
+    "logo": "https://media.glassdoor.com/sql/1032313/appinventiv-squarelogo-1592410336805.png"
+  },
+  {
+    "title": "Software Developer",
+    "company": "iTechnolabs",
+    "from": "Jun 2020",
+    "to": "Aug 2020",
+    "url": "https://www.itechnolabs.biz",
+    "description": "Worked on various project related in Firebase, React-Native and phonegap technologies, data administration in firebase cloud storage etc.",
+    "location": "Mohali (Pubjab)",
+    "logo": "https://media.glassdoor.com/sql/4364754/itechnolabs-software-squareLogo-1618557364619.png"
+  },
+  {
+    "title": "Senior Software Developer",
+    "company": "smartData Enterprises",
+    "from": "Jan 2018",
+    "to": "June 2020",
+    "url": "https://www.smartdatainc.com/",
+    "description": "Started with industrial training then worked on various live project in React Native/ React JS and nodeJS, in various domain i.e. Marketplace, Healthcare, Logistics etc.",
+    "location": "Mohali (Pubjab)",
+    "logo": "https://media.glassdoor.com/sql/508375/smartdata-enterprises-squarelogo.png"
+  }
+]
