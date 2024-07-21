@@ -1,0 +1,42 @@
+[
+  {
+    "id": 4,
+    "title": "Senior Software Developer",
+    "company": "Publicis Sapient",
+    "duration": "(Jul 2021 - Present)",
+    "url": "https://www.publicissapient.com/",
+    "description": "Working on a telecommunication industry project for the US and participated in a learning program during the tenure.",
+    "location": "Noida (Uttar Pradesh)",
+    "logo": "https://media.glassdoor.com/sql/11148/publicis-sapient-squarelogo.png"
+  },
+  {
+    "id": 3,
+    "title": "Senior Software Developer",
+    "company": "Appinventiv Technologies",
+    "duration": "(Aug 2020 - Jul 2021)",
+    "url": "https://appinventiv.com/",
+    "description": "Worked on different projects like Adidas, Livia Apps, Marketplace with Sharetribe, BuddyBet a betting application.",
+    "location": "Noida (Uttar Pradesh)",
+    "logo": "https://media.glassdoor.com/sql/1032313/appinventiv-squarelogo-1592410336805.png"
+  },
+  {
+    "id": 2,
+    "title": "Software Developer",
+    "company": "iTechnolabs",
+    "duration": "(Jun 2020 - Aug 2020)",
+    "url": "https://www.itechnolabs.biz",
+    "description": "Worked on various projects related to Firebase, React-Native, and PhoneGap technologies, data administration in Firebase Cloud Storage, etc.",
+    "location": "Mohali (Punjab)",
+    "logo": "https://media.glassdoor.com/sql/4364754/itechnolabs-software-squareLogo-1618557364619.png"
+  },
+  {
+    "id": 1,
+    "title": "Senior Software Developer",
+    "company": "smartData Enterprises",
+    "duration": "(Jan 2018 - Jun 2020)",
+    "url": "https://www.smartdatainc.com/",
+    "description": "Started with industrial training then worked on various live projects in React Native/React JS and NodeJS, in various domains such as Marketplace, Healthcare, Logistics, etc.",
+    "location": "Mohali (Punjab)",
+    "logo": "https://media.glassdoor.com/sql/508375/smartdata-enterprises-squarelogo.png"
+  }
+]

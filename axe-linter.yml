@@ -1,0 +1,157 @@
+# axe-linter.yml
+
+axe-linter:
+  # Specify the files or directories to include in the scan
+  include:
+    - "src/**/*.js"
+    - "src/**/*.jsx"
+    - "src/**/*.ts"
+    - "src/**/*.tsx"
+
+  # Specify the files or directories to exclude from the scan
+  exclude:
+    - "node_modules/**"
+    - "dist/**"
+
+  # Configuration for rule checks
+  rules:
+    # WCAG 2.0 Level A and AA rules
+    aria-allowed-attr:
+      enabled: true
+    aria-allowed-role:
+      enabled: true
+    aria-dpub-role-fallback:
+      enabled: true
+    aria-hidden-body:
+      enabled: true
+    aria-hidden-focus:
+      enabled: true
+    aria-input-field-name:
+      enabled: true
+    aria-meter-name:
+      enabled: true
+    aria-progressbar-name:
+      enabled: true
+    aria-required-attr:
+      enabled: true
+    aria-required-children:
+      enabled: true
+    aria-required-parent:
+      enabled: true
+    aria-roles:
+      enabled: true
+    aria-toggle-field-name:
+      enabled: true
+    aria-tooltip-name:
+      enabled: true
+    aria-treeitem-name:
+      enabled: true
+    aria-valid-attr-value:
+      enabled: true
+    aria-valid-attr:
+      enabled: true
+    button-name:
+      enabled: true
+    bypass:
+      enabled: true
+    color-contrast:
+      enabled: true
+      options:
+        threshold: 4.5 # WCAG 2.0 AA level
+    definition-list:
+      enabled: true
+    dlitem:
+      enabled: true
+    document-title:
+      enabled: true
+    duplicate-id-active:
+      enabled: true
+    duplicate-id-aria:
+      enabled: true
+    duplicate-id:
+      enabled: true
+    frame-tested:
+      enabled: true
+    frame-title-unique:
+      enabled: true
+    frame-title:
+      enabled: true
+    heading-order:
+      enabled: true
+    html-has-lang:
+      enabled: true
+    html-lang-valid:
+      enabled: true
+    image-alt:
+      enabled: true
+    input-button-name:
+      enabled: true
+    label:
+      enabled: true
+    label-title-only:
+      enabled: true
+    link-in-text-block:
+      enabled: true
+    link-name:
+      enabled: true
+    list:
+      enabled: true
+    listitem:
+      enabled: true
+    marquee:
+      enabled: true
+    meta-refresh:
+      enabled: true
+    meta-viewport-large:
+      enabled: true
+    object-alt:
+      enabled: true
+    page-has-heading-one:
+      enabled: true
+    region:
+      enabled: true
+    role-img-alt:
+      enabled: true
+    scope-attr-valid:
+      enabled: true
+    scrollable-region-focusable:
+      enabled: true
+    server-side-image-map:
+      enabled: true
+    skip-link:
+      enabled: true
+    table-duplicate-name:
+      enabled: true
+    table-fake-caption:
+      enabled: true
+    table-headers:
+      enabled: true
+    tabindex:
+      enabled: true
+    tabindex-duplicate:
+      enabled: true
+    td-has-header:
+      enabled: true
+    th-has-data-cells:
+      enabled: true
+    valid-lang:
+      enabled: true
+    video-caption:
+      enabled: true
+    video-description:
+      enabled: true
+
+  # Configuration for output
+  output:
+    format: "json" # Output format: json, html, csv, etc.
+    directory: "axe-reports" # Directory to save the reports
+
+  # Configuration for failure thresholds
+  thresholds:
+    violations: 10 # Fail if more than 10 violations are found
+    warnings: 5 # Fail if more than 5 warnings are found
+
+  # Additional options
+  options:
+    timeout: 30000 # Timeout for each scan (in milliseconds)
+    headless: true # Run the scans in headless mode

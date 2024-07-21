@@ -1,0 +1,56 @@
+[
+  {
+    "src": "../typescript.png",
+    "srcset": "../typescript.png",
+    "title": "TypeScript",
+    "link": "https://www.typescriptlang.org/"
+  },
+  {
+    "src": "../javascript.png",
+    "srcset": "../javascript.png",
+    "title": "JavaScript",
+    "link": "https://www.javascript.com/"
+  },
+  {
+    "src": "../react.png",
+    "srcset": "../react.png",
+    "title": "ReactJs",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "src": "../react.png",
+    "srcset": "../react.png",
+    "title": "React Native",
+    "link": "https://reactnative.dev/"
+  },
+  {
+    "src": "../angular.png",
+    "srcset": "../angular.png",
+    "title": "Angular",
+    "link": "https://angular.io/"
+  },
+  {
+    "src": "../docker.png",
+    "srcset": "../docker.png",
+    "title": "Docker",
+    "link": "https://www.docker.com/"
+  },
+  {
+    "src": "../graphql.png",
+    "srcset": "../graphql.png",
+    "title": "GraphQl",
+    "link": "https://graphql.org/"
+  },
+  {
+    "src": "../node.png",
+    "srcset": "../node.png",
+    "title": "Node",
+    "link": "https://nodejs.org/en/"
+  },
+  {
+    "src": "../nextjs-lg.png",
+    "srcset": "../nextjs-lg.png",
+    "title": "NextJs",
+    "link": "https://nextjs.org/"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Master of Computer Applications (MCA), Computer Science",
+    "duration": "2016 - 2018",
+    "institution": "Amrapali University Haldwani",
+    "grade": "75%"
+  },
+  {
+    "id": 2,
+    "title": "Bachelor of Computer Applications (BCA), Computer Science",
+    "duration": "2013 - 2016",
+    "institution": "Amrapali University Haldwani",
+    "grade": "72% aggregate"
+  }
+]
