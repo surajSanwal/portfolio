@@ -3,10 +3,7 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -22,14 +19,24 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@services/*": ["./src/services/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@types/*": ["./src/types/*"],
+      "@onfig/*": ["./src/config/*"],
+      "@public/*": ["./public/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@helpers/*": ["./src/helpers/*"]
+    }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }

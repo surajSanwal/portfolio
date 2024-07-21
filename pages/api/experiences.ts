@@ -1,4 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import Experiences from "../../json/experiences.json";
 export default (_req: any, res: any) => {
-  res.status(200).json({ name: "Next.js API route" });
+  try {
+    res.status(200).json({ data: Experiences || [], status: "success" });
+  } catch (e: any) {
+    res.status(500).json({ status: "error", message: e?.message });
+  }
 };
