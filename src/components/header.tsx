@@ -9,7 +9,6 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <Head>
-        <html lang={'en'} />
         <title>Suraj Sanwal | Experienced Software Developer | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
