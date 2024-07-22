@@ -20,8 +20,11 @@ function ContactSection() {
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY &&
-        process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY ? (
+        {console.log(
+          "NEXT_PUBLIC_RECAPTCHA_ENABLED",
+          process.env.NEXT_PUBLIC_RECAPTCHA_ENABLED,
+        )}
+        {process.env.NEXT_PUBLIC_RECAPTCHA_ENABLED ? (
           <ContactWithCaptcha />
         ) : (
           <ContactWithoutCaptcha />

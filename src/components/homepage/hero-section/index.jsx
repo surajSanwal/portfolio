@@ -1,4 +1,5 @@
 // @flow strict
+import React from "react";
 import { personalData } from "@utils/data/personal-data";
 import { skillsData } from "@utils/data/skills";
 import Image from "next/image";
@@ -133,7 +134,7 @@ function HeroSection() {
                   aria-label={skillsData?.join(" ,")}
                 >{`[`}</span>
                 {skillsData?.map((skill, id) => (
-                  <>
+                  <React.Fragment key={id}>
                     {id === 0 && (
                       <span tabIndex="-1" className="text-gray-400">
                         {"'"}
@@ -150,7 +151,7 @@ function HeroSection() {
                         {", '"}
                       </span>
                     )}
-                  </>
+                  </React.Fragment>
                 ))}
                 <span tabIndex="-1" className="text-gray-400">
                   {"]"}
