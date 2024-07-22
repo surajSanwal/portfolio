@@ -5,7 +5,6 @@ import Navbar from "./navbar";
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
-
   return (
     <>
       <Head>
@@ -92,7 +91,13 @@ const Header: React.FC<HeaderProps> = () => {
         ></script>
       </Head>
       <header>
-        <a href="#main" id="skip" className="transition left-0 bg-primary text-primary-content absolute p-3 m-3 -translate-y-16 focus:translate-y-0">Skip to main content</a>
+        <a
+          href="#main"
+          id="skip"
+          className="absolute left-0 top-0 p-3 m-3 bg-primary text-primary-content -translate-y-full focus:translate-y-0 transition-transform"
+        >
+          Skip to main content
+        </a>
         <Navbar />
       </header>
     </>
