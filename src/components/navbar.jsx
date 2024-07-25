@@ -85,7 +85,7 @@ function Navbar() {
           ref={menuRef}
           className={`fixed top-0 right-0 h-full w-64 bg-[#0d1224] p-6 transition-transform duration-300 ease-in-out transform ${
             menuOpen ? "translate-x-0" : "translate-x-full"
-          } z-[9999] md:static md:h-auto md:w-auto md:flex md:flex-row md:space-x-1 md:bg-transparent md:opacity-100`}
+          } z-[9999] md:static md:h-auto md:w-auto md:flex md:flex-row md:space-x-1 md:bg-transparent md:opacity-100 md:translate-x-0`}
           id="navbar-default"
         >
           <button
