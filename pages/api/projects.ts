@@ -7,3 +7,6 @@ export default (_req: any, res: any) => {
     res.status(500).json({ status: "error", message: e?.message });
   }
 };
+export const getProjectByName = (name: string) => {
+  return projects.find(project => project.name === name);
+};

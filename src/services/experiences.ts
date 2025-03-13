@@ -1,13 +1,13 @@
-import { Experiences } from "../types";
+import { Experience } from "@type/index";
 import apiService from "./fetchBaseQuery";
 
 export const experienceServices = apiService.injectEndpoints({
   endpoints: (builder) => ({
-    getExperiences: builder.query<Experiences[], void>({
+    getExperiences: builder.query<Experience[], void>({
       query: () => ({
         url: "/experiences",
       }),
-      transformResponse: (result: { data: Experiences[] }) => result.data,
+      transformResponse: (result: { data: Experience[] }) => result.data,
     }),
   }),
 });

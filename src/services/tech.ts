@@ -1,4 +1,4 @@
-import { Technology } from "../types";
+import { Technology } from "@type/index";
 import apiService from "./fetchBaseQuery";
 
 export const techServices = apiService.injectEndpoints({

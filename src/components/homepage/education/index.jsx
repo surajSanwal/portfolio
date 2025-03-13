@@ -1,13 +1,17 @@
 // @flow strict
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import { BsPersonWorkspace } from "react-icons/bs";
-import AnimationLottie from "@helpers/animation-lottie";
 import GlowCard from "@helpers/glow-card";
 import lottieFile from "/public/lottie/study.json";
 import Skeleton from "react-loading-skeleton";
 import { useGetEducationsQuery } from "@services/education";
+
+const AnimationLottie = dynamic(() => import("@helpers/animation-lottie"), {
+  ssr: false,
+});
 
 function Education() {
   const { isLoading, data: educations = [] } = useGetEducationsQuery();

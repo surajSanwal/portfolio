@@ -13,7 +13,7 @@ function BlogCard({ blog }) {
           src={blog?.cover_image}
           height={1080}
           width={1920}
-          alt=""
+          alt={blog.title}
           className="h-full w-full group-hover:scale-110 transition-all duration-300"
         />
       </div>
@@ -34,9 +34,9 @@ function BlogCard({ blog }) {
           </div>
         </div>
         <Link target="_blank" href={blog.url}>
-          <p className="my-2 lg:my-3 cursor-pointer text-lg text-white sm:text-xl font-medium hover:text-violet-500">
+          <a target="_blank" rel="noopener noreferrer" href={blog.url} className="my-2 lg:my-3 cursor-pointer text-lg text-white sm:text-xl font-medium hover:text-violet-500">
             {blog.title}
-          </p>
+          </a>
         </Link>
         <p className="mb-2 text-sm text-[#16f2b3]">
           {`${blog.reading_time_minutes} Min Read`}
