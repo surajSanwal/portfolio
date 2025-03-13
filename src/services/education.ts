@@ -1,13 +1,13 @@
-import { Educations } from "../types";
+import { Education } from "@type/index";
 import apiService from "./fetchBaseQuery";
 
 export const educationServices = apiService.injectEndpoints({
   endpoints: (builder) => ({
-    getEducations: builder.query<Educations[], void>({
+    getEducations: builder.query<Education[], void>({
       query: () => ({
         url: "/educations",
       }),
-      transformResponse: (result: { data: Educations[] }) => result.data,
+      transformResponse: (result: { data: Education[] }) => result.data,
     }),
   }),
 });

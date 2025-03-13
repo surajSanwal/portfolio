@@ -18,9 +18,9 @@ function Blog({ blogs }) {
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+          <h2 className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
             Blogs
-          </span>
+          </h2>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
@@ -39,6 +39,7 @@ function Blog({ blogs }) {
           className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
           role="button"
           href="/blog"
+          rel="noopener noreferrer"
         >
           <span>View More</span>
           <FaArrowRight size={16} />

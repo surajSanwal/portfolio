@@ -5,14 +5,7 @@ export type Technology = {
   link: any;
 };
 
-export type Projects = {
-  src: string;
-  title: string;
-  link: any;
-  description: string;
-};
-
-export type Experiences = {
+export type Experience = {
   title: string;
   company: string;
   from: string;
@@ -23,4 +16,4 @@ export type Experiences = {
   url: string;
 };
 
-export type Educations = {};
+export type Education = {};

@@ -1,11 +1,16 @@
 // @flow strict
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
-import AnimationLottie from "@helpers/animation-lottie";
 import GlowCard from "@helpers/glow-card";
 import { useGetExperiencesQuery } from "@services/experiences";
 import Skeleton from "react-loading-skeleton";
 import lottieFile from "public/lottie/code.json";
+import dynamic from "next/dynamic";
+
+const AnimationLottie = dynamic(() => import("@helpers/animation-lottie"), {
+  ssr: false,
+});
+
 function Experience() {
   const { isLoading, data: experiences = [] } = useGetExperiencesQuery();
   if (isLoading) {

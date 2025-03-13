@@ -27,7 +27,7 @@
       "@styles/*": ["./src/styles/*"],
       "@services/*": ["./src/services/*"],
       "@pages/*": ["./src/pages/*"],
-      "@types/*": ["./src/types/*"],
+      "@type/*": ["./src/types/*"],
       "@onfig/*": ["./src/config/*"],
       "@public/*": ["./public/*"],
       "@redux/*": ["./src/redux/*"],
