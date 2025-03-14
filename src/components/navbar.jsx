@@ -88,30 +88,32 @@ function Navbar() {
           } z-[9999] md:static md:h-auto md:w-auto md:flex md:flex-row md:space-x-1 md:bg-transparent md:opacity-100 md:translate-x-0`}
           id="navbar-default"
         >
-          <button
-            onClick={() => {
-              setMenuOpen(false);
-              document.getElementById("menuOpen").focus();
-            }}
-            className="text-white self-end mb-4 md:hidden focus:outline-1 focus:p-1"
-            aria-label="Close menu"
-            id="menuClose"
-          >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <li className="w-full md:w-auto">
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                document.getElementById("menuOpen").focus();
+              }}
+              className="text-white self-end mb-4 md:hidden focus:outline-1 focus:p-1"
+              aria-label="Close menu"
+              id="menuClose"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </li>
 
           {menu?.map((navItem) => (
             <li key={navItem.path} className="w-full md:w-auto">
