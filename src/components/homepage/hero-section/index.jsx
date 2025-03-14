@@ -22,7 +22,6 @@ function HeroSection() {
       />
       <h1
         className="sr-only"
-        tabIndex={1}
       >{`Hello, This is ${personalData.name} , I'm a Professional ${personalData.designation}.`}</h1>
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
@@ -43,7 +42,7 @@ function HeroSection() {
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <BsGithub size={30} />
+              <BsGithub size={30} aria-hidden="true"  />
             </Link>
             <Link
               href={personalData.linkedIn}
@@ -51,7 +50,7 @@ function HeroSection() {
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <BsLinkedin size={30} />
+              <BsLinkedin size={30} aria-hidden="true"  />
             </Link>
             <Link
               href={personalData.facebook}
@@ -59,7 +58,7 @@ function HeroSection() {
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <FaFacebook size={30} />
+              <FaFacebook size={30} aria-hidden="true"  />
             </Link>
             <Link
               href={personalData.leetcode}
@@ -67,7 +66,7 @@ function HeroSection() {
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <SiLeetcode size={30} />
+              <SiLeetcode size={30} aria-hidden="true" />
             </Link>
             <Link
               href={personalData.twitter}
@@ -75,7 +74,7 @@ function HeroSection() {
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <FaTwitterSquare size={30} />
+              <FaTwitterSquare size={30} aria-hidden="true" />
             </Link>
           </div>
 
@@ -86,7 +85,7 @@ function HeroSection() {
             >
               <div className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Contact me</span>
-                <RiContactsFill size={16} />
+                <RiContactsFill size={16} aria-hidden="true" />
               </div>
             </Link>
 
@@ -97,7 +96,7 @@ function HeroSection() {
               href={personalData.resume}
             >
               <span tabIndex="-1">Get Resume</span>
-              <MdDownload tabIndex="-1" size={16} />
+              <MdDownload tabIndex="-1" size={16} aria-hidden="true" />
             </Link>
           </div>
         </div>

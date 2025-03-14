@@ -116,7 +116,7 @@ function Navbar() {
           {menu?.map((navItem) => (
             <li key={navItem.path} className="w-full md:w-auto">
               <Link
-                className="block px-4 py-2 no-underline outline-none hover:no-underline focus:underline focus:underline-offset-2"
+                className="block px-4 py-2 no-underline outline-none hover:no-underline focus:underline focus:underline-offset-2 focus:border focus:border-pink-600"
                 href={navItem.path}
                 onClick={() => setMenuOpen(false)} // Close the menu on link click
               >
