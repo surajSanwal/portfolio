@@ -18,7 +18,7 @@ function Footer() {
               aria-label={`${personalData.name} linkedIn profile`}
               target="_blank"
               href={personalData?.linkedIn}
-              className="text-[#16f2b3]"
+              className="text-[#16f2b3] underline"
             >
               {personalData?.name}
             </Link>
